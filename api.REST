@@ -1,0 +1,19 @@
+# REST API Server on Local Firebase
+# @baseUrl = http://localhost:5001/jumail-backend-firebase-rest/us-central1/api
+
+# REST API Server on Live Firebase
+//@baseUrl = https://us-central1-jumail-backend-firebase-rest.cloudfunctions.net/api
+@baseUrl = http://localhost:3000
+//@baseUrl = https://us-central1-nodewithfirebase-student.cloudfunctions.net/api
+
+### Getting the list of users
+GET {{baseUrl}}/customers
+
+###  Create a new user
+POST {{baseUrl}}/customers
+Content-Type: application/json
+{
+    "email": "anya-forger@gmail.com",
+    "name": "Anya Forger",
+    "age": 22,
+}
